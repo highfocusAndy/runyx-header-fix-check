@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         headers: [
+          { key: "Strict-Transport-Security", value: "max-age=15552000" },
           { key: "X-Content-Type-Options", value: "nosniff" },
         ],
       },
